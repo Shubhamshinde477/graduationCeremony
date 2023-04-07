@@ -10,7 +10,9 @@ class GraduationCeremony:
         self.n = n
 
     def brute_force(self):
-
+        """
+        This method will accept none and return a string with (ways to miss / ways to attend)
+        """
         ways_to_attend = 0
         ways_to_miss = 0
 
@@ -28,8 +30,7 @@ class GraduationCeremony:
 
     def optimised_solution(self):
         """
-        This
-        :return:
+        This method will accept none and return a string with (ways to miss / ways to attend)
         """
         dp = [[0] * 4 for _ in range(self.n + 1)]
 
