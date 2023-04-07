@@ -21,10 +21,10 @@ class GraduationCeremony:
             B = set(map(lambda b: ''.join(b), set(permutations(A))))
             days_to_ignore = 4*'A'
 
-            for k in B:
-                if k.find(days_to_ignore) == -1:
+            for sample in B:
+                if sample.find(days_to_ignore) == -1:
                     ways_to_attend += 1
-                    if k.endswith('A'):
+                    if sample.endswith('A'):
                         ways_to_miss += 1
         return f'{ways_to_miss}/{ways_to_attend}'
 
